@@ -1,0 +1,52 @@
+Sep 01 10:16:26.745 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 01 10:16:26.746 HYPERVISOR: Started on IP = localhost, TCP port = 56779.
+Sep 01 10:16:26.751 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 10:16:26.751 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips 
+Sep 01 10:16:26.751 GENERAL: working_dir=C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips
+Sep 01 10:16:26.752 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\f1558201-0d08-4a5e-9b80-dc41cd5c01ad 
+Sep 01 10:16:26.758 GENERAL: working_dir=C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\f1558201-0d08-4a5e-9b80-dc41cd5c01ad
+Sep 01 10:16:26.758 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Sep 01 10:16:26.759 VM: VM R2 created.
+Sep 01 10:16:26.760 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Sep 01 10:16:26.760 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Sep 01 10:16:26.760 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/user/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 01 10:16:26.761 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 01 10:16:26.761 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60aa5f14 
+Sep 01 10:16:26.761 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Sep 01 10:16:26.762 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Sep 01 10:16:26.762 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Sep 01 10:16:26.762 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Sep 01 10:16:26.818 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/user/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 01 10:16:37.518 HYPERVISOR: exec_cmd: nio create_udp udp-73f57de5-96ce-4815-b9a2-add002797c12 10004 127.0.0.1 10005 
+Sep 01 10:16:37.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-73f57de5-96ce-4815-b9a2-add002797c12 
+Sep 01 10:16:37.760 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 01 10:17:07.318 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Sep 01 10:17:07.319 VM: VM Ghost created.
+Sep 01 10:17:07.320 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/user/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 01 10:17:07.320 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 01 10:17:07.320 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 01 10:17:07.321 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Sep 01 10:17:07.321 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 01 10:17:07.321 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Sep 01 10:17:07.321 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 01 10:17:07.631 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 01 10:17:07.632 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 01 10:17:07.763 VM: VM Ghost shutdown.
+Sep 01 10:17:07.764 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 01 10:17:07.765 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 01 10:17:07.765 VM: VM Ghost destroyed.
+Sep 01 10:17:07.776 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Sep 01 10:17:07.776 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 01 10:17:07.777 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 01 10:17:07.781 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Sep 01 10:17:07.782 HYPERVISOR: exec_cmd: vm start R2 
+Sep 01 10:36:26.856 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 01 10:36:26.856 HYPERVISOR: exec_cmd: vm slot_disable_nio R2 0 1 
+Sep 01 10:36:26.883 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R2 0 1 
+Sep 01 10:36:26.883 HYPERVISOR: exec_cmd: nio delete udp-73f57de5-96ce-4815-b9a2-add002797c12 
+Sep 01 10:36:32.240 HYPERVISOR: exec_cmd: nio create_udp udp-1172a2fe-dae9-46e1-a548-fb94f73293a9 10004 127.0.0.1 10005 
+Sep 01 10:36:32.242 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-1172a2fe-dae9-46e1-a548-fb94f73293a9 
+Sep 01 10:36:32.242 HYPERVISOR: exec_cmd: vm get_status R2 
+Sep 01 10:36:32.242 HYPERVISOR: exec_cmd: vm slot_enable_nio R2 0 0 
+Sep 01 10:37:08.579 HYPERVISOR: exec_cmd: vm extract_config R2 
+Sep 01 10:37:08.596 HYPERVISOR: exec_cmd: vm extract_config R2 

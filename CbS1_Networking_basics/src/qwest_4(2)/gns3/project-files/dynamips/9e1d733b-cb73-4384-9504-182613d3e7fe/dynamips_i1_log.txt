@@ -1,0 +1,43 @@
+Sep 01 10:16:25.010 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 01 10:16:25.011 HYPERVISOR: Started on IP = localhost, TCP port = 56773.
+Sep 01 10:16:25.253 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 01 10:16:25.253 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips 
+Sep 01 10:16:25.262 GENERAL: working_dir=C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips
+Sep 01 10:16:25.262 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\9df8a311-77bb-41be-8da5-3215c79bcc67 
+Sep 01 10:16:25.262 GENERAL: working_dir=C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\9df8a311-77bb-41be-8da5-3215c79bcc67
+Sep 01 10:16:25.262 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Sep 01 10:16:25.263 VM: VM R1 created.
+Sep 01 10:16:25.263 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Sep 01 10:16:25.263 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Sep 01 10:16:25.264 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 01 10:16:25.264 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 01 10:16:25.264 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa5f14 
+Sep 01 10:16:25.265 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Sep 01 10:16:25.265 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Sep 01 10:16:25.266 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Sep 01 10:16:25.266 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Sep 01 10:16:25.317 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 01 10:16:30.304 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/user/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Sep 01 10:16:37.256 HYPERVISOR: exec_cmd: nio create_udp udp-59740b58-ce6a-42c1-b521-afa46b24b852 10002 127.0.0.1 10003 
+Sep 01 10:16:37.512 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-59740b58-ce6a-42c1-b521-afa46b24b852 
+Sep 01 10:16:37.512 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 01 10:17:07.777 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Sep 01 10:17:07.782 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\user\GNS3\projects\gns_prj\project-files\dynamips\c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Sep 01 10:17:07.782 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 01 10:17:07.787 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Sep 01 10:17:07.788 HYPERVISOR: exec_cmd: vm start R1 
+Sep 01 10:33:07.158 HYPERVISOR: exec_cmd: nio bind_filter udp-59740b58-ce6a-42c1-b521-afa46b24b852 2 capture 
+Sep 01 10:33:07.158 HYPERVISOR: exec_cmd: nio setup_filter udp-59740b58-ce6a-42c1-b521-afa46b24b852 2 en10mb C:\Users\user\GNS3\projects\gns_prj\project-files\captures\R1_FastEthernet01_to_R2_FastEthernet01.pcap 
+Sep 01 10:36:08.575 HYPERVISOR: exec_cmd: vm extract_config R1 
+Sep 01 10:36:08.593 HYPERVISOR: exec_cmd: vm extract_config R1 
+Sep 01 10:36:24.400 HYPERVISOR: exec_cmd: nio unbind_filter udp-59740b58-ce6a-42c1-b521-afa46b24b852 2 
+Sep 01 10:36:26.823 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 01 10:36:26.823 HYPERVISOR: exec_cmd: vm slot_disable_nio R1 0 1 
+Sep 01 10:36:26.853 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Sep 01 10:36:26.854 HYPERVISOR: exec_cmd: nio delete udp-59740b58-ce6a-42c1-b521-afa46b24b852 
+Sep 01 10:36:32.198 HYPERVISOR: exec_cmd: nio create_udp udp-94e0f2be-97e4-4214-8bba-e9d83891b28c 10002 127.0.0.1 10003 
+Sep 01 10:36:32.205 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-94e0f2be-97e4-4214-8bba-e9d83891b28c 
+Sep 01 10:36:32.205 HYPERVISOR: exec_cmd: vm get_status R1 
+Sep 01 10:36:32.205 HYPERVISOR: exec_cmd: vm slot_enable_nio R1 0 0 
+Sep 01 10:37:41.139 HYPERVISOR: exec_cmd: nio bind_filter udp-94e0f2be-97e4-4214-8bba-e9d83891b28c 2 capture 
+Sep 01 10:37:41.139 HYPERVISOR: exec_cmd: nio setup_filter udp-94e0f2be-97e4-4214-8bba-e9d83891b28c 2 en10mb C:\Users\user\GNS3\projects\gns_prj\project-files\captures\R1_FastEthernet00_to_R2_FastEthernet00.pcap 
